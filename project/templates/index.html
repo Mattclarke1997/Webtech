@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="background">
+<section>
+    <div class='col-lg-12'>
+    <div class="main-menu">
+      <div class="row">
+        <div class="col-lg-9">
+          <h1 class="menuhead">Odins Tomb</h1>
+          <div class="menubuttons">
+           <a href="{{ url_for('main.index') }}"><button type="button" class="btn btn-primary">Play</button> </a>
+           <a href="{{ url_for('auth.login') }}"><button type="button" class="btn btn-primary">Login</button> </a>
+           <a href="{{ url_for('auth.signup') }}"><button type="button" class="btn btn-primary">Sign Up</button> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  </div> 
+{% endblock %}

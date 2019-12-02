@@ -1,0 +1,101 @@
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.navbar-default {
+  position: relative; 
+  bottom: 0; 
+  right: 0;    
+  margin-bottom: -10px;
+  opacity: 0.9;
+  background-color: #949161;
+  border-color: black;
+  
+}
+.navbar-default .navbar-brand {
+  color: black;
+}
+
+.navbar-default .navbar-brand:hover{
+  color: rgb(13, 180, 231);
+}
+
+.box{
+  background-color: grey;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  border: 10px;
+  border-color: #949161;
+  border-style: solid;
+  opacity: 0.7;
+}
+
+.field{
+  padding: 10px;
+  border-color: #949161;
+  border-style: solid;
+  border:5px;
+}
+
+
+.main-menu {
+  border-style: solid;
+  border-width: 5px;
+  border-color:black;
+  margin: auto;
+  margin-top: 10%;
+  height: 40%;
+  width: 25%;
+  background-color:#949161;
+  margin-left: 15%;
+  box-shadow: 5px 10px;
+}
+
+.menuhead {
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 50px;
+}
+
+.menubuttons {
+  float: right;
+}
+.btn-primary {
+  margin-bottom: 10px;
+  color: rgb(13, 180, 231);
+  background-color:rgb(189, 184, 184);
+  border-color: black;
+  display: block;
+  margin-top: 40px;
+  width: 150px;
+  font-family: 'MedievalSharp', cursive;
+  box-shadow: 5px 5px black;
+}
+.btn-primary:hover{
+  background-color: #555859;
+  border-color: rgb(13, 180, 231);
+  color: #39B8FE;
+}
+
+.btn-primary-main{
+  color: rgb(13, 180, 231);
+  background-color:rgb(189, 184, 184);
+  border-color: black;
+  display: block;
+  margin-left: 40%;
+  margin-bottom: 10px;
+  font-family: 'MedievalSharp', cursive;
+  box-shadow: 5px 5px black;
+}
+
+body{
+  background: url('../static/img/odin.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+}
+

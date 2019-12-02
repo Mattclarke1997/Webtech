@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Flask App</title>
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+  <link href="../static/css.css" rel="stylesheet">
+</head>
+<body>
+    <!--basic layout template comtaining body tag, this is how i will fill my pages with content using flask templating-->
+{% include 'includes/navbar.html' %}
+<div class="container">
+    {% block body %}{% endblock %}
+    </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

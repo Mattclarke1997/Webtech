@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="column is-4 is-offset-4">
+    <h3 class="title"></h3>
+    <div class="box">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="notification is-danger">
+                {{ messages[0] }} Go to <a href="{{ url_for('auth.login') }}">login page</a>  <!--creating my error message-->
+            </div>
+        {% endif %}
+        {% endwith %}
+        <form action="/signup" method="POST">
+            <div class="field">
+                <div class="control">
+                    <input class="input in-large" type="email" name="email" placeholder="Email" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input in-large" type="name" name="name" placeholder="Username" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input in-large" type="password" name="password" placeholder="Password">
+                </div>
+            </div>
+                <button class="btn btn-primary-main">Next</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
